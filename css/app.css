@@ -51,27 +51,61 @@
 /* backgrounds */
 
 .slide--color1 {
-    background-color: var(--color1, hsl(240, 20% 20%));
+    background-color: var(--color1, hsl(240, 20%, 20%));
 }
 
 .slide--color2 {
-    background-color: var(--color2, hsl(240, 20% 20%));
+    background-color: var(--color2, hsl(240, 20%, 20%));
 }
 
 .slide--color3 {
-    background-color: var(--color3, hsl(240, 20% 20%));
+    background-color: var(--color3, hsl(240, 20%, 20%));
 }
 
 .slide--color4 {
-    background-color: var(--color4, hsl(240, 20% 20%));
+    background-color: var(--color4, hsl(240, 20%, 20%));
 }
 
 .slide--color5 {
-    background-color: var(--color5, hsl(240, 20% 20%));
+    background-color: var(--color5, hsl(240, 20%, 20%));
 }
 
 /* link */
 
 .slide__button {
     color: var(--text-light, #ffffff);
+}
+
+#slide-1 {
+        padding-top: 15%;
+        Padding-bottom: 25%;
+        text-align: center;
+        font-size: 200%;
+    }
+
+#slide-2 {
+        padding-top: 15%;
+        Padding-bottom: 25%;
+        text-align: center;
+        font-size: 200%;
+    }
+#slide-3 {
+        padding-top: 15%;
+        Padding-bottom: 25%;
+        text-align: center;
+        font-size: 200%;
+    }
+#slide-4 {
+        padding-top: 15%;
+        Padding-bottom: 25%;
+        text-align: center;
+        font-size: 200%;
+    }
+#slide-5 {
+        padding-top: 15%;
+        Padding-bottom: 25%;
+        text-align: center;
+        font-size: 200%;
+    }
+
 }
