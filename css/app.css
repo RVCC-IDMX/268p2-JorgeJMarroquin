@@ -5,11 +5,12 @@
     --text-light: #ffffff;
 
     /* background colors */
-    --base-hue: 345;
-    --base-sat: 85%;
+    --base-hue: 245;
+    --base-sat: 35%;
     --base-lght: 17%;
 
-    --your-number: 0.5;
+    /* any number to modify colors */
+    --your-number: 1.05;
 
     --color1: hsl(
         var(--base-hue),
@@ -74,38 +75,24 @@
 
 .slide__button {
     color: var(--text-light, #ffffff);
+    
 }
 
-#slide-1 {
-        padding-top: 15%;
-        Padding-bottom: 25%;
-        text-align: center;
-        font-size: 200%;
-    }
-
-#slide-2 {
-        padding-top: 15%;
-        Padding-bottom: 25%;
-        text-align: center;
-        font-size: 200%;
-    }
-#slide-3 {
-        padding-top: 15%;
-        Padding-bottom: 25%;
-        text-align: center;
-        font-size: 200%;
-    }
-#slide-4 {
-        padding-top: 15%;
-        Padding-bottom: 25%;
-        text-align: center;
-        font-size: 200%;
-    }
-#slide-5 {
-        padding-top: 15%;
-        Padding-bottom: 25%;
-        text-align: center;
-        font-size: 200%;
-    }
-
+.slide__button--prev {
+    color: rgb(17, 240, 229);
+    padding-top: 4px;
+    Padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
 }
+
+.slide__button--next {
+    color: rgb(17, 240, 229);
+    padding-top: 4px;
+    Padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+}
+
