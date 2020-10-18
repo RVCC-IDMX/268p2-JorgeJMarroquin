@@ -79,14 +79,24 @@
 .slide__title {
     font-family: myFirstFont;
     font-weight: 300;
+    text-align: center;
 }
 
 /* p */
 
 .slide__text {
     font-family: myFirstFont;
+    font-size: 100%;
     font-weight: 100;
+    column-count: 2;
+    column-gap: 60px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    Text-align: center;
+
+
 }
+
 
 
 /* backgrounds */
