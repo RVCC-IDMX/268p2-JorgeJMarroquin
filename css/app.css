@@ -78,7 +78,7 @@
 
 .slide__title {
     font-family: myFirstFont;
-    
+    font-size: 39px;
     font-weight: 300;
     text-align: center;
 }
@@ -87,14 +87,15 @@
 
 .slide__text {
     font-family: myFirstFont;
-    font-size: 100%;
+    font-size: 125%;
     font-weight: 100;
     column-count: 2;
-    column-gap: 75px;
+    column-gap: 80px;
     column-rule-style: solid;
     column-rule-width: 1px;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 3%;
 
 
 }
@@ -106,7 +107,7 @@
 .slide--color1 {
     background-color: var(--color1, hsl(240, 20%, 20%));
     padding-bottom: 8px;
-    padding-top: 18%;
+    padding-top: 2%;
     height: 100vh;
     
     
@@ -115,24 +116,28 @@
 .slide--color2 {
     background-color: var(--color2, hsl(240, 20%, 20%));
     padding-bottom: 8px;
+    padding-top: 2%;
     height: 100vh;
 }
 
 .slide--color3 {
     background-color: var(--color3, hsl(240, 20%, 20%));
     padding-bottom: 8px;
+    padding-top: 2%;
     height: 100vh;
 }
 
 .slide--color4 {
     background-color: var(--color4, hsl(240, 20%, 20%));
     padding-bottom: 8px;
+    padding-top: 2%;
     height: 100vh;
 }
 
 .slide--color5 {
     background-color: var(--color5, hsl(240, 20%, 20%));
     padding-bottom: 8px;
+    padding-top: 2%;
     height: 100vh;
 }
 
@@ -143,35 +148,50 @@
     
 }
 
+symbol {
+    
+    fill:  rgb(14, 241, 223);
+    stroke: maroon;
+    stroke-width: 2px;
+}
+
+
+
+
 .slide__button--prev {
-    background-color: rgb(14, 241, 223);
-    color: rgb(17, 19, 19);
+    background-color: rgb(17, 19, 19);
+    color: rgb(14, 241, 223);
     border-radius: 5px;
-    padding-top: 1px;
+    padding-top: 137px;
     Padding-bottom: 2px;
     padding-left: 6px;
     padding-right: 6px;
+    margin-left: 10%;
     position: relative;
     text-decoration: none;
+    font-size: 25px;
     box-shadow: 0 5px 0 rgb(3, 57, 88);
 }
 
 .slide__button--next {
-    background-color: rgb(14, 241, 223);
-    color: rgb(17, 19, 19);
+    background-color: rgb(17, 19, 19);
+    color: rgb(14, 241, 223);
     border-radius: 5px;
-    padding-top: 1px;
+    padding-top: 137px;
     Padding-bottom: 2px;
     padding-left: 6px;
     padding-right: 6px;
+    margin-left: 11%;
     position: relative;
     text-decoration: none;
+    font-size: 25px;
     box-shadow: 0 5px 0 rgb(3, 57, 88);
 }
 
+
 a:hover {
-    background-color: #f8e806ef;
-    color: rgb(24, 3, 63);
+    background-color: rgb(37, 7, 143);
+    color:  rgb(14, 241, 223);
     cursor: pointer;
  
   }
