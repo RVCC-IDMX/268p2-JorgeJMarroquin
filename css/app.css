@@ -87,7 +87,7 @@
 
 .slide__text {
     font-family: myFirstFont;
-    font-size: 125%;
+    font-size: 100%;
     font-weight: 100;
     column-count: 2;
     column-gap: 80px;
@@ -95,7 +95,6 @@
     column-rule-width: 1px;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 3%;
 
 
 }
@@ -106,91 +105,93 @@
 
 .slide--color1 {
     background-color: var(--color1, hsl(240, 20%, 20%));
-    padding-bottom: 8px;
-    padding-top: 2%;
     height: 100vh;
+    padding-top: 15px;
     
     
 }
 
 .slide--color2 {
     background-color: var(--color2, hsl(240, 20%, 20%));
-    padding-bottom: 8px;
-    padding-top: 2%;
     height: 100vh;
+    padding-top: 15px;
 }
 
 .slide--color3 {
     background-color: var(--color3, hsl(240, 20%, 20%));
-    padding-bottom: 8px;
-    padding-top: 2%;
     height: 100vh;
+    padding-top: 15px;
 }
 
 .slide--color4 {
     background-color: var(--color4, hsl(240, 20%, 20%));
-    padding-bottom: 8px;
-    padding-top: 2%;
     height: 100vh;
+    padding-top: 15px;
 }
 
 .slide--color5 {
     background-color: var(--color5, hsl(240, 20%, 20%));
-    padding-bottom: 8px;
-    padding-top: 2%;
     height: 100vh;
+    padding-top: 15px;
 }
 
 /* link */
 
-.slide__button {
+.slide__buttons {
     color: var(--text-light, #ffffff);
-    
 }
 
 symbol {
-    
     fill:  rgb(14, 241, 223);
-    stroke: maroon;
-    stroke-width: 2px;
 }
 
+h4{
+    background-color: none;
+}
 
+.icon--color{
+    background-color:none;
+    padding-left: 4%;
+    margin-left:1%;
+}
 
 
 .slide__button--prev {
-    background-color: rgb(17, 19, 19);
+    background-color: none;
     color: rgb(14, 241, 223);
-    border-radius: 5px;
-    padding-top: 137px;
-    Padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-left: 10%;
+    border-radius: 7px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    padding-left: 8%;
+    margin-left: 19%;
     position: relative;
     text-decoration: none;
     font-size: 25px;
-    box-shadow: 0 5px 0 rgb(3, 57, 88);
+    /*box-shadow: 0 5px 0 rgb(3, 57, 88);*/
+    float: left;
 }
 
 .slide__button--next {
-    background-color: rgb(17, 19, 19);
+    background-color: none;
     color: rgb(14, 241, 223);
-    border-radius: 5px;
-    padding-top: 137px;
-    Padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-left: 11%;
+    border-radius: 7px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    padding-left: 8%;
+    margin-right: 14%;
+    margin-left: 5%;
     position: relative;
     text-decoration: none;
     font-size: 25px;
-    box-shadow: 0 5px 0 rgb(3, 57, 88);
+    /*box-shadow: 0 5px 0 rgb(3, 57, 88);*/
+    float: right;
 }
 
 
 a:hover {
-    background-color: rgb(37, 7, 143);
+    background-color: black;
     color:  rgb(14, 241, 223);
     cursor: pointer;
  
