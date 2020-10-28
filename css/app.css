@@ -63,7 +63,15 @@
 /* declearing font-face */
 @font-face {
     font-family: myFirstFont;
-    src: url(../font/static/Orbitron-Black.ttf);
+    src: url(../font/sono/variable/Sono[wght].woff2);
+    font-style: normal;
+    font-weight: 100 900;
+    
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
     font-style: normal;
     font-weight: 100 900;
     
@@ -80,7 +88,7 @@
 /* h1 */
 
 .slide__title {
-    font-family: myFirstFont;
+    font-family: mySecondFont;
     font-size: 39px;
     font-weight: 300;
     text-align: center;
@@ -90,7 +98,7 @@
 
 .slide__text {
     font-family: myFirstFont;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: 100;
     column-count: 2;
     column-gap: 80px;
