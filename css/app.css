@@ -177,8 +177,8 @@ h4{
   }
 
 
-.slide__button--prev {
-    /*background-color: none;
+/*.slide__button--prev {
+    background-color: none;
     color: rgb(14, 241, 223);
     border-radius: 7px;
     padding-top: 0%;
@@ -193,8 +193,8 @@ h4{
     float: left;*/
 }
 
-.slide__button--next {
-    /*background-color: none;
+/*.slide__button--next {
+    background-color: none;
     color: rgb(14, 241, 223);
     border-radius: 7px;
     padding-top: 0%;
