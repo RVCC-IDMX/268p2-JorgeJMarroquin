@@ -43,11 +43,12 @@
         calc(var(--base-sat) * (calc(var(--your-number) * 3))),
         calc(var(--base-lght) * (calc(var(--your-number) * 3)))
     );
-
-
     
 }
 
+.defs-only {
+    display: none;
+  }
 
 
 /* body */
@@ -55,6 +56,8 @@
 .body {
     color: var(--text-light, #ffffff);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* declearing font-face */
@@ -62,17 +65,17 @@
     font-family: myFirstFont;
     src: url(../font/static/Orbitron-Black.ttf);
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100 900;
     
 }
-
+/*
 @font-face {
     font-family: myFirstFont;
     src: url(../font/static/Orbitron-Regular.ttf);
     font-style: normal;
     font-weight: 100;
     
-}
+}*/
 
 /* h1 */
 
@@ -139,6 +142,8 @@
 
 .slide__buttons {
     color: var(--text-light, #ffffff);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 symbol {
@@ -155,9 +160,20 @@ h4{
     margin-left:1%;
 }
 
+.slide__button {
+    background-color: none;
+    color: rgb(14, 241, 223);
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 25px;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+  }
+
 
 .slide__button--prev {
-    background-color: none;
+    /*background-color: none;
     color: rgb(14, 241, 223);
     border-radius: 7px;
     padding-top: 0%;
@@ -168,12 +184,12 @@ h4{
     position: relative;
     text-decoration: none;
     font-size: 25px;
-    /*box-shadow: 0 5px 0 rgb(3, 57, 88);*/
-    float: left;
+    box-shadow: 0 5px 0 rgb(3, 57, 88);
+    float: left;*/
 }
 
 .slide__button--next {
-    background-color: none;
+    /*background-color: none;
     color: rgb(14, 241, 223);
     border-radius: 7px;
     padding-top: 0%;
@@ -185,8 +201,8 @@ h4{
     position: relative;
     text-decoration: none;
     font-size: 25px;
-    /*box-shadow: 0 5px 0 rgb(3, 57, 88);*/
-    float: right;
+    box-shadow: 0 5px 0 rgb(3, 57, 88);
+    float: right;*/
 }
 
 
@@ -200,4 +216,9 @@ a:hover {
 a:active {
     box-shadow: none;
     top: 4px;
+  }
+
+  span {
+    width: 8rem;
+    margin-top: 2rem;
   }
