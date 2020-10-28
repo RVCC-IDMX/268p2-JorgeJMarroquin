@@ -151,17 +151,22 @@ symbol {
 }
 
 h4{
+    font-size: 20px;
     background-color: none;
+    padding-top: 3%;
+    padding-left: 5%;
+    text-align: center;
 }
 
 .icon--color{
     background-color:none;
-    padding-left: 4%;
-    margin-left:1%;
+    padding-left: 3%;
+    margin-left:8%;
+    margin-top: 2rem;
 }
 
 .slide__button {
-    background-color: none;
+    background-color:none;
     color: rgb(14, 241, 223);
     border-radius: 7px;
     text-decoration: none;
@@ -212,13 +217,17 @@ a:hover {
     cursor: pointer;
  
   }
+
   
+
 a:active {
     box-shadow: none;
     top: 4px;
   }
 
   span {
-    width: 8rem;
-    margin-top: 2rem;
+    background-color: none;
+    width: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
