@@ -182,16 +182,15 @@ h4{
     max-width: 50%;
     margin: auto;
     display: flex;
+    transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
   }
 
 
 .slide__button--prev:hover {
-    transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
     transform: skewx(20deg);
 }
 
 .slide__button--next:hover {
-    transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
      transform: skewx(-20deg);
 
 }
