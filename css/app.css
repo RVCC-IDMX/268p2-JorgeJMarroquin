@@ -196,10 +196,34 @@ h4{
 
 }
 
+.slide--color1:hover{
+
+}
+
+.slide__title--animation:hover{
+
+}
+
+.slide__text--animation:hover{
+
+}
+
+.p__animation--1:hover{
+    transform: translate(0px, 20px);
+    transition: transform 1s; 
+}
+.p__animation--2:hover{
+    transform: translate(0px, 20px);
+    transition: transform 1s; 
+
+}
+
+
 
 a:hover {
     background-color: black;
-    color:  rgb(248, 114, 4);
+    font-family: mySecondFont;
+    color:  white;
     cursor: pointer;
  
   }
