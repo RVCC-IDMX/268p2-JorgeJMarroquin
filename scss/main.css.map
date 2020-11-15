@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU",
+    "sources": [
+        "main.scss",
+        "_custom.scss",
+        "_mixins.scss",
+        "_fonts.scss",
+        "_animation.scss",
+        "_svg.scss",
+        "_body.scss",
+        "_slide.scss",
+        "_slide-color.scss",
+        "_button.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
