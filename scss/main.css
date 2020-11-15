@@ -1,2 +1,384 @@
 /* main */
+/* mixins
+https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
+*/
+.body {
+  color: var(--text-light, #ffffff);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* custom properties */
+:root {
+  /* color theme */
+  /* text colors */
+  --text-light: #ffffff;
+  /* background colors */
+  --base-hue: 6.13;
+  --base-sat: 73.23%;
+  --base-lght: 49.8%;
+  /* any number to modify colors */
+  --your-number: 0.4;
+  --color1: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1)))
+    );
+  --color2: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1.5)))
+    );
+  --color3: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2)))
+    );
+  --color4: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2.5)))
+    );
+  --color5: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 3))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 3)))
+    );
+}
+
+.defs-only {
+  display: none;
+}
+
+/* body */
+.body {
+  color: var(--text-light, #ffffff);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* declearing font-face */
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/sono/variable/Sono[wght].woff2);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    background-color: var(--color1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    background-color: var(--color1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+            transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
+            transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 0.95) translateY(0);
+            transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+            transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes around {
+  0% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+@keyframes around {
+  0% {
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+}
+
+/* h1 */
+.slide__title {
+  font-family: mySecondFont;
+  font-size: 39px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* p */
+.slide__text {
+  font-family: myFirstFont;
+  font-size: 120%;
+  font-weight: 100;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+  -webkit-column-rule-style: solid;
+          column-rule-style: solid;
+  -webkit-column-rule-width: 1px;
+          column-rule-width: 1px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* backgrounds */
+.slide--color1 {
+  background-color: var(--color1, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color2 {
+  background-color: var(--color2, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color3 {
+  background-color: var(--color3, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color4 {
+  background-color: var(--color4, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color5 {
+  background-color: var(--color5, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+/* link */
+.slide__buttons {
+  color: var(--text-light, #ffffff);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+symbol {
+  fill: #0ef1df;
+}
+
+h4 {
+  font-size: 20px;
+  background-color: none;
+  padding-top: 3%;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.icon--color {
+  background-color: none;
+  padding-left: 3%;
+  margin-left: 8%;
+  margin-top: 2rem;
+}
+
+.slide__button {
+  background-color: none;
+  color: #0ef1df;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 25px;
+  max-width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
+  transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
+}
+
+.slide__button--prev:hover {
+  -webkit-transform: skewx(20deg);
+          transform: skewx(20deg);
+}
+
+.slide__button--next:hover {
+  -webkit-transform: skewx(-20deg);
+          transform: skewx(-20deg);
+}
+
+.slide--color1 {
+  -webkit-animation: transitionIn 1.5s;
+          animation: transitionIn 1.5s;
+}
+
+.slide__titleAnimation {
+  -webkit-animation: bouncing 2s;
+          animation: bouncing 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.p__animation--1 {
+  -webkit-animation: bounceIn 3s;
+          animation: bounceIn 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.p__animation--2 {
+  -webkit-animation: bounceIn 3s;
+          animation: bounceIn 3s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+.button--in {
+  -webkit-animation: around 3s;
+          animation: around 3s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+a:hover {
+  background-color: black;
+  font-family: mySecondFont;
+  color: white;
+  cursor: pointer;
+}
+
+a:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 4px;
+}
+
+span {
+  background-color: none;
+  width: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
 /*# sourceMappingURL=main.css.map */
