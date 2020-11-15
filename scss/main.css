@@ -171,6 +171,74 @@ https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2
   padding: 0;
 }
 
+:root {
+  /* color theme */
+  /* text colors */
+  --text-light: #ffffff;
+  /* background colors */
+  --base-hue: 6.13;
+  --base-sat: 73.23%;
+  --base-lght: 49.8%;
+  /* any number to modify colors */
+  --your-number: 0.4;
+  --color1: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1)))
+    );
+  --color2: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1.5)))
+    );
+  --color3: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2)))
+    );
+  --color4: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2.5)))
+    );
+  --color5: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 3))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 3)))
+    );
+}
+
+/* backgrounds */
+.slide--color1 {
+  background-color: var(--color1, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color2 {
+  background-color: var(--color2, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color3 {
+  background-color: var(--color3, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color4 {
+  background-color: var(--color4, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
+.slide--color5 {
+  background-color: var(--color5, #29293d);
+  height: 100vh;
+  padding-top: 15px;
+}
+
 /* custom properties */
 :root {
   /* color theme */
