@@ -54,22 +54,7 @@
 
 
 
-/* declearing font-face */
-@font-face {
-    font-family: myFirstFont;
-    src: url(../font/sono/variable/Sono[wght].woff2);
-    font-style: normal;
-    font-weight: 100 900;
-    
-}
 
-@font-face {
-    font-family: mySecondFont;
-    src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
-    font-style: normal;
-    font-weight: 100 900;
-    
-}
 
 @keyframes transitionIn {
     from {
