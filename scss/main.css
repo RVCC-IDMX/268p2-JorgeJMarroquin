@@ -2,6 +2,7 @@
 /* mixins
 https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
 */
+/* body */
 .body {
   color: var(--text-light, #ffffff);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
