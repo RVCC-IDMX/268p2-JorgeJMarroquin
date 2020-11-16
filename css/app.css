@@ -1,23 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h4{
     font-size: 20px;
     background-color: none;
@@ -26,39 +8,6 @@ h4{
     text-align: center;
 }
 
-
-
-
-
-
-
-.slide--color1{
-    animation: transitionIn 1.5s;
-}
-
-
-.slide__titleAnimation {
-    animation: bouncing 2s;
-    animation-delay: 0s;
-}
-
-
-.p__animation--1{
- animation: bounceIn 3s;
- animation-delay: 0s;
-  
-}
-.p__animation--2{
-animation: bounceIn 3s;
-animation-delay: .25s;
-
-}
-
-.button--in{
-    animation: around 3s;
-    animation-delay: .25s;
-    
-    }
 
 
 

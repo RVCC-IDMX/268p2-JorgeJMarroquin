@@ -1,23 +1,4 @@
 /* main */
-/* mixins
-https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
-*/
-/* declearing font-face */
-@font-face {
-  font-family: myFirstFont;
-  src: url(../font/sono/variable/Sono[wght].woff2);
-  font-style: normal;
-  font-weight: 100 900;
-}
-
-@font-face {
-  font-family: mySecondFont;
-  src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
-  font-style: normal;
-  font-weight: 100 900;
-}
-
-/* ANIMATION */
 @-webkit-keyframes transitionIn {
   from {
     opacity: 0;
@@ -161,6 +142,58 @@ https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
   }
+}
+
+/* mixins
+https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
+*/
+/* declearing font-face */
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/sono/variable/Sono[wght].woff2);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+/* ANIMATION */
+.slide--color1 {
+  -webkit-animation: transitionIn 1.5s;
+          animation: transitionIn 1.5s;
+}
+
+.slide__titleAnimation {
+  -webkit-animation: bouncing 2s;
+          animation: bouncing 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.p__animation--1 {
+  -webkit-animation: bounceIn 3s;
+          animation: bounceIn 3s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.p__animation--2 {
+  -webkit-animation: bounceIn 3s;
+          animation: bounceIn 3s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+.button--in {
+  -webkit-animation: around 3s;
+          animation: around 3s;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
 }
 
 symbol {

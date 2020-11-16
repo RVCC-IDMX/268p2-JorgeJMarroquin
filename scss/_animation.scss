@@ -1,52 +1,33 @@
 /* ANIMATION */
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-        background-color: var(--color1);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+
+
+
+
+  .slide--color1{
+    animation: transitionIn 1.5s;
 }
 
 
-@keyframes bouncing {
-    0%   { transform: scale(1,1)      translateY(0); }
-    10%  { transform: scale(1.1,.9)   translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-100px); }
-    50%  { transform: scale(1.05,.95) translateY(0); }
-    57%  { transform: scale(1,1)      translateY(-7px); }
-    64%  { transform: scale(1,1)      translateY(0); }
-    100% { transform: scale(1,1)      translateY(0); }
+.slide__titleAnimation {
+    animation: bouncing 2s;
+    animation-delay: 0s;
 }
 
 
-@keyframes bounceIn {
-    0% {
-       opacity: 0;    
-       transform: scale(.3);
-    }
-    25% {
-        opacity: 1;
-       transform: scale(1.1);
-    }
-    50% {
-
-       transform: scale(.95);
-    }
-    100% {
-
-       transform: scale(1);
-    }
+.p__animation--1{
+ animation: bounceIn 3s;
+ animation-delay: 0s;
+  
+}
+.p__animation--2{
+animation: bounceIn 3s;
+animation-delay: .25s;
 
 }
 
-
-@keyframes around {
-
-    0% {transform: rotate(1080deg);
-    }
+.button--in{
+    animation: around 3s;
+    animation-delay: .25s;
     
-  }
+    }
