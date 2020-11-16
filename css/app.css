@@ -16,9 +16,7 @@
 
 
 
-symbol {
-    fill:  rgb(14, 241, 223);
-}
+
 
 h4{
     font-size: 20px;
@@ -28,12 +26,6 @@ h4{
     text-align: center;
 }
 
-.icon--color{
-    background-color:none;
-    padding-left: 3%;
-    margin-left:8%;
-    margin-top: 2rem;
-}
 
 
 
@@ -84,9 +76,3 @@ a:active {
     top: 4px;
   }
 
-  span {
-    background-color: none;
-    width: 5rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }

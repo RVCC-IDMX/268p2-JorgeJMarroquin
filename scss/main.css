@@ -163,6 +163,24 @@ https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2
   }
 }
 
+symbol {
+  fill: #0ef1df;
+}
+
+.icon--color {
+  background-color: none;
+  padding-left: 3%;
+  margin-left: 8%;
+  margin-top: 2rem;
+}
+
+span {
+  background-color: none;
+  width: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
 .defs-only {
   display: none;
 }
