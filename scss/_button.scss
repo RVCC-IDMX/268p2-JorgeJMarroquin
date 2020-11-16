@@ -24,3 +24,28 @@
      transform: skewx(-20deg);
 
 }
+
+a:hover {
+    background-color: black;
+    font-family: mySecondFont;
+    color:  white;
+    cursor: pointer;
+ 
+  }
+
+
+a:active {
+    box-shadow: none;
+    top: 4px;
+  }
+
+
+
+  h4{
+    font-size: 20px;
+    background-color: none;
+    padding-top: 3%;
+    padding-left: 5%;
+    text-align: center;
+}
+
