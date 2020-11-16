@@ -1,51 +1,46 @@
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-        background-color: var(--color1);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+:root {
+    /* color theme */
+    /* text colors */
+    --text-light: #ffffff;
 
+    /* background colors */
+    --base-hue: 6.13;
+    --base-sat: 73.23%;
+    --base-lght: 49.8%;
 
-@keyframes bouncing {
-    0%   { transform: scale(1,1)      translateY(0); }
-    10%  { transform: scale(1.1,.9)   translateY(0); }
-    30%  { transform: scale(.9,1.1)   translateY(-100px); }
-    50%  { transform: scale(1.05,.95) translateY(0); }
-    57%  { transform: scale(1,1)      translateY(-7px); }
-    64%  { transform: scale(1,1)      translateY(0); }
-    100% { transform: scale(1,1)      translateY(0); }
-}
+    /* any number to modify colors */
+    --your-number: 0.4;
 
+    --color1: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1)))
+    );
 
-@keyframes bounceIn {
-    0% {
-       opacity: 0;    
-       transform: scale(.3);
-    }
-    25% {
-        opacity: 1;
-       transform: scale(1.1);
-    }
-    50% {
-
-       transform: scale(.95);
-    }
-    100% {
-
-       transform: scale(1);
-    }
-
-}
-
-
-@keyframes around {
-
-    0% {transform: rotate(1080deg);
-    }
+    --color2: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1.5)))
+    );
     
-  }
+    --color3: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2)))
+    );
+
+    --color4: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2.5)))
+    );
+
+    --color5: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 3))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 3)))
+    );
+    
+}
+
+

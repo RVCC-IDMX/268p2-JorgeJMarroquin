@@ -1,4 +1,60 @@
 /* main */
+:root {
+  /* color theme */
+  /* text colors */
+  --text-light: #ffffff;
+  /* background colors */
+  --base-hue: 6.13;
+  --base-sat: 73.23%;
+  --base-lght: 49.8%;
+  /* any number to modify colors */
+  --your-number: 0.4;
+  --color1: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1)))
+    );
+  --color2: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 1.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 1.5)))
+    );
+  --color3: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2)))
+    );
+  --color4: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 2.5))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 2.5)))
+    );
+  --color5: hsl(
+        var(--base-hue),
+        calc(var(--base-sat) * (calc(var(--your-number) * 3))),
+        calc(var(--base-lght) * (calc(var(--your-number) * 3)))
+    );
+}
+
+/* mixins
+https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
+*/
+/* declearing font-face */
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/sono/variable/Sono[wght].woff2);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+/* ANIMATION */
 @-webkit-keyframes transitionIn {
   from {
     opacity: 0;
@@ -144,25 +200,6 @@
   }
 }
 
-/* mixins
-https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
-*/
-/* declearing font-face */
-@font-face {
-  font-family: myFirstFont;
-  src: url(../font/sono/variable/Sono[wght].woff2);
-  font-style: normal;
-  font-weight: 100 900;
-}
-
-@font-face {
-  font-family: mySecondFont;
-  src: url(../font/orbitron/Orbitron-VariableFont_wght.ttf);
-  font-style: normal;
-  font-weight: 100 900;
-}
-
-/* ANIMATION */
 .slide--color1 {
   -webkit-animation: transitionIn 1.5s;
           animation: transitionIn 1.5s;
@@ -249,43 +286,6 @@ span {
           column-rule-width: 1px;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-:root {
-  /* color theme */
-  /* text colors */
-  --text-light: #ffffff;
-  /* background colors */
-  --base-hue: 6.13;
-  --base-sat: 73.23%;
-  --base-lght: 49.8%;
-  /* any number to modify colors */
-  --your-number: 0.4;
-  --color1: hsl(
-        var(--base-hue),
-        calc(var(--base-sat) * (calc(var(--your-number) * 1))),
-        calc(var(--base-lght) * (calc(var(--your-number) * 1)))
-    );
-  --color2: hsl(
-        var(--base-hue),
-        calc(var(--base-sat) * (calc(var(--your-number) * 1.5))),
-        calc(var(--base-lght) * (calc(var(--your-number) * 1.5)))
-    );
-  --color3: hsl(
-        var(--base-hue),
-        calc(var(--base-sat) * (calc(var(--your-number) * 2))),
-        calc(var(--base-lght) * (calc(var(--your-number) * 2)))
-    );
-  --color4: hsl(
-        var(--base-hue),
-        calc(var(--base-sat) * (calc(var(--your-number) * 2.5))),
-        calc(var(--base-lght) * (calc(var(--your-number) * 2.5)))
-    );
-  --color5: hsl(
-        var(--base-hue),
-        calc(var(--base-sat) * (calc(var(--your-number) * 3))),
-        calc(var(--base-lght) * (calc(var(--your-number) * 3)))
-    );
 }
 
 /* backgrounds */
