@@ -1,23 +1,26 @@
-/* h1 */
+/* slide's properties*/
 
-.slide__title {
-    font-family: mySecondFont;
-    font-size: 39px;
-    font-weight: 300;
-    text-align: center;
-}
+.slide {
 
-/* p */
+    &__title {
+        font-family: mySecondFont;
+        font-size: 39px;
+        font-weight: 300;
+        text-align: center;
+    }
 
-.slide__text {
-    font-family: myFirstFont;
-    font-size: 120%;
-    font-weight: 100;
-    column-count: 2;
-    column-gap: 80px;
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    padding-left: 5%;
-    padding-right: 5%;
+
+
+    &__text {
+        font-family: myFirstFont;
+        font-size: 120%;
+        font-weight: 100;
+        column-count: 2;
+        column-gap: 80px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
 }

@@ -263,7 +263,7 @@ span {
   padding: 0;
 }
 
-/* h1 */
+/* slide's properties*/
 .slide__title {
   font-family: mySecondFont;
   font-size: 39px;
@@ -271,7 +271,6 @@ span {
   text-align: center;
 }
 
-/* p */
 .slide__text {
   font-family: myFirstFont;
   font-size: 120%;
@@ -342,46 +341,35 @@ span {
   transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
 }
 
-/*.slide__button {
-    background-color:none;
-    color: rgb(14, 241, 223);
-    border-radius: 7px;
-    text-decoration: none;
-    font-size: 25px;
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 3);
-  }*/
-.slide__button--prev:hover {
+.slide__buttons__button h4 {
+  font-size: 20px;
+  background-color: none;
+  padding-top: 3%;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.slide__buttons .slide__button--prev:hover {
   -webkit-transform: skewx(20deg);
           transform: skewx(20deg);
 }
 
-.slide__button--next:hover {
+.slide__buttons .slide__button--next:hover {
   -webkit-transform: skewx(-20deg);
           transform: skewx(-20deg);
 }
 
-a:hover {
+.slide__buttons a:hover {
   background-color: black;
   font-family: mySecondFont;
   color: white;
   cursor: pointer;
 }
 
-a:active {
+.slide__buttons a:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   top: 4px;
-}
-
-h4 {
-  font-size: 20px;
-  background-color: none;
-  padding-top: 3%;
-  padding-left: 5%;
-  text-align: center;
 }
 
 /* custom properties */
