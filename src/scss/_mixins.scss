@@ -1,0 +1,30 @@
+/* mixins
+https://dev.to/alemesa/10-awesome-sass-scss-mixins-5ci2 
+*/
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  }
+  
+  @mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+  }
+  
+  @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+    @font-face {
+      font-family: quote($font-name);
+      src: url($path + ".ttf") format("truetype");
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+  
+  @mixin multi-column($col-num, $col-gap, $col-rule: none) {
+    columns: $col-num;
+    column-gap: $col-gap;
+    column-rule: $col-rule;
+  }
