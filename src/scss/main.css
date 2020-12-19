@@ -290,31 +290,31 @@ span {
 /* backgrounds */
 .slide--color1 {
   background-color: var(--color1, #29293d);
-  height: 100vh;
+  /*height: 100vh;*/
   padding-top: 15px;
 }
 
 .slide--color2 {
   background-color: var(--color2, #29293d);
-  height: 100vh;
+  /*height: 100vh;*/
   padding-top: 15px;
 }
 
 .slide--color3 {
   background-color: var(--color3, #29293d);
-  height: 100vh;
+  /*height: 100vh;*/
   padding-top: 15px;
 }
 
 .slide--color4 {
   background-color: var(--color4, #29293d);
-  height: 100vh;
+  /*height: 100vh;*/
   padding-top: 15px;
 }
 
 .slide--color5 {
   background-color: var(--color5, #29293d);
-  height: 100vh;
+  /*height: 100vh;*/
   padding-top: 15px;
 }
 
