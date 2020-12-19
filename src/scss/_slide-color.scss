@@ -4,6 +4,8 @@
 .slide--color1 {
     background-color: var(--color1, hsl(240, 20%, 20%));
     /*height: 100vh;*/
+    min-height: 100vh;
+    min-height: -webkit-fill-available; 
     padding-top: 15px;
     
 }
@@ -11,23 +13,31 @@
 .slide--color2 {
     background-color: var(--color2, hsl(240, 20%, 20%));
     /*height: 100vh;*/
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     padding-top: 15px;
 }
 
 .slide--color3 {
     background-color: var(--color3, hsl(240, 20%, 20%));
     /*height: 100vh;*/
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     padding-top: 15px;
 }
 
 .slide--color4 {
     background-color: var(--color4, hsl(240, 20%, 20%));
     /*height: 100vh;*/
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     padding-top: 15px;
 }
 
 .slide--color5 {
     background-color: var(--color5, hsl(240, 20%, 20%));
     /*height: 100vh;*/
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     padding-top: 15px;
 }
